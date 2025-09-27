@@ -6,9 +6,12 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 30px 50px 30px 50px;
 }
+.header{
+    display: flex;
+    flex-direction: row;
+}
 
 .person-header1{
-    display: inline-block;
     padding-left: 50px;
     font-size: 30px;
     font-weight: bold;
@@ -20,14 +23,33 @@ body{
     top: -10px;
 }
 .person-header2{
-    display: inline-block;
     margin-left: 300px;
+    display: flex;
+    flex-direction: column;
 }
 .person-header2 nav ul li{
-    display: inline-block;
-    padding-left: 70px; 
+    width: 100px;
+    height: 100px   ; 
     font-size: 20px;
     font-weight: bold;   
+    transition: 0.3s;
+    margin-left: 30px;
+    margin-top: -22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.person-header2 nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.person-header2 nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.person-header2 nav ul li:hover{
+    background-color: #7395da;
 }
 .image{
     width: 100%;
@@ -77,3 +99,95 @@ body{
     left: 200px;
     top: -28px;
 }
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: -60px;
+}
+.content-person1{
+    padding-top: 80px;
+    width: 50%;
+    height: 350px;
+    background-color: #f7f7f7;
+}
+.content-person1 p{
+    margin-top: 20px;
+    margin-left: 70px;
+
+}
+.content-person1 h1{
+    margin-left: 70px;
+}
+.content-person1 button{
+    margin-left: 70px;
+    width: 150px;
+    height: 50px;
+    background-color: #ff2f4b;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3 ease;
+    margin-top: 20px;
+}
+.content-person1 button:hover{
+    background-color: #e717e5;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+}
+.content-person1 button:active{
+    transform: scale(0.95);
+}
+.content-person2{
+   width: 50%;
+    height: 350px;
+}
+.content-person2 img{
+    width: 100%;
+    height: 430px;
+} 
+.content1{
+    display: flex;
+    width: 100%;
+}
+.content1-person1{
+    width: 50%;
+    height: 350px;
+}
+.content1-person2{
+    padding-top: 80px;
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 350px;
+}
+.content1-person2 button{
+    margin-left: 70px;
+    width: 150px;
+    height: 50px;
+    background-color: #ff2f4b;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3 ease;
+    margin-top: 20px;
+}
+.content1-person2 button:hover{
+    background-color: #e717e5;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+}
+.content1-person2 button:active{
+    transform: scale(0.95);
+}
+.content1-person2 h1{
+    margin-left: 70px;
+}
+.content1-person2 p{
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.content1-person1 img{
+    height: 430px;
+} 
